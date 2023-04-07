@@ -46,6 +46,6 @@ class CamerasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def camera_params
-      params.require(:camera).permit(:name, :location)
+      params.require(:camera).permit(:name, :location, :uri)
     end
 end
