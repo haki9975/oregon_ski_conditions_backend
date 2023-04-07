@@ -1,4 +1,5 @@
 class CamerasController < ApplicationController
+  has_one_attached :image
   before_action :set_camera, only: %i[ show update destroy ]
 
   # GET /cameras
