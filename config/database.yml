@@ -13,13 +13,13 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  host: localhost
+  username: oregon_ski_scraper
+  password: password
+  host: mysql_oregon
 
 development:
   <<: *default
-  database: ski_scraper_development
+  database: oregon_ski_scraper_developement
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
