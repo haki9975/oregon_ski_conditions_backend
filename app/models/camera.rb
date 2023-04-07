@@ -1,2 +1,4 @@
 class Camera < ApplicationRecord
+
+    
 end
